@@ -11,6 +11,7 @@ export default defineConfig({
     emptyOutDir: true,
   },
   optimizeDeps: {
+    include: ['ethers', 'three', '@solana/web3.js'],
     esbuildOptions: {
       define: {
         global: "globalThis",
@@ -29,6 +30,7 @@ export default defineConfig({
     sveltekit(),
     environment("all", { prefix: "CANISTER_" }),
     environment("all", { prefix: "DFX_" }),
+    environment(["VITE_SOLANA_RPC_ENDPOINT"]),
   ],
   resolve: {
     alias: [
@@ -39,5 +41,11 @@ export default defineConfig({
         ),
       },
     ],
+  },
+  define: {
+    'process.env': process.env,
+    'import.meta.env.VITE_SOLANA_RPC_ENDPOINT': JSON.stringify(process.env.VITE_SOLANA_RPC_ENDPOINT),
+    'import.meta.env.CANISTER_ID_NINA_BACKEND': JSON.stringify(process.env.CANISTER_ID_NINA_BACKEND),
+    'import.meta.env.CANISTER_ID_NINA_FRONTEND': JSON.stringify(process.env.CANISTER_ID_NINA_FRONTEND),
   },
 });

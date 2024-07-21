@@ -13,7 +13,13 @@
   "dependencies": {
     "@dfinity/agent": "^0.20.0",
     "@dfinity/candid": "^0.20.0",
-    "@dfinity/principal": "^0.20.0"
+    "@dfinity/principal": "^0.20.0",
+    "@solana/web3.js": "^1.95.0",
+    "bignumber.js": "^9.1.2",
+    "ethers": "^6.13.1",
+    "phantasma-ts": "^0.1.70",
+    "sweetalert2": "^11.12.2",
+    "three": "^0.166.1"
   },
   "devDependencies": {
     "@sveltejs/adapter-static": "^2.0.0",

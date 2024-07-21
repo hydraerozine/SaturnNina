@@ -3,7 +3,8 @@
 N.I.N.A. (Network Integration and Navigation Assistant) is an innovative project designed to enable seamless control and management of digital assets across various blockchain networks through the Internet Computer (ICP). Leveraging ICP's capabilities, N.I.N.A. aims to provide a unified platform for interacting with and managing assets across different blockchain ecosystems, including DeFi, NFTs, and various token standards. In this hackathon, we will demonstrate a small-scale prototype showcasing N.I.N.A.'s functionality in the DeFi sector, where users can log in with their desired wallets and perform cross-chain swaps or token bridging. By utilizing a system of interconnected contracts on each chain, unified by the main controller N.I.N.A. on ICP, we employ chain fusion and outcall technologies over HTTPS to support both EVM and non-EVM chains, offering comprehensive bridge and DEX services. This demonstration highlights N.I.N.A.'s potential to revolutionize multi-chain asset management, making it a compelling choice for judges in the competition.
 
 ## Main Controller Canister FE/BE
-- Repository: [Main Controller Canister](https://4yken-yyaaa-aaaap-qho7a-cai.icp0.io/)
+- Repository: [Main Controller Repo](https://github.com/hydraerozine/SaturnNina.git)
+- URL: [Main Controller Canister Login](https://4yken-yyaaa-aaaap-qho7a-cai.icp0.io/)
 
 ## EVM Canister Handler
 - Repository: [EVM Canister Handler](https://github.com/hydraerozine/rustchainfusion.git)

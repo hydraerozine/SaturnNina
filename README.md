@@ -245,7 +245,7 @@ token BLITZ {
 
 ## AI Work in Progress
 
-- The code for AI work in progress to show data for users as well as let users swap or transfer tokens across chains:
+- The code for AI work in progress to show data for users as well as let users swap or transfer tokens across chains via telegram :
 
 ```
 require('dotenv').config();
